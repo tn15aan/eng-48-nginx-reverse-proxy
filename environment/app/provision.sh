@@ -9,6 +9,9 @@ sudo apt-get upgrade -y
 # install nginx
 sudo apt-get install nginx -y
 
+sudo rm /etc/nginx/sites-enabled/default
+sudo ln -s /home/ubuntu/environment/app/default /etc/nginx/sites-enabled/default
+
 # install git
 sudo apt-get install git -y
 
